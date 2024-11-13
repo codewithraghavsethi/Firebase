@@ -5,7 +5,7 @@ import { app } from "../firebase";
 
 const auth = getAuth(app)
 
-const SingUp = () => {
+const Signup = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
 
@@ -17,6 +17,7 @@ const SingUp = () => {
 
   return (
     <div className="signup-page ">
+      <h1>Signup Page</h1>
       <label>Email</label>
       <input
         onChange={(e) => setEmail(e.target.value)}
@@ -38,4 +39,4 @@ const SingUp = () => {
   );
 };
 
-export default SingUp;
+export default Signup;
